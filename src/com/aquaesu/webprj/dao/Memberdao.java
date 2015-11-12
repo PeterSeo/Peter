@@ -22,9 +22,10 @@ public class Memberdao {
                 + "(ORDER BY REGDATE DESC) NUM, * FROM MEMBERS)"
                 + "A WHERE NUM BETWEEN " + start  +" AND " + end;
 		
-		String url="jdbc:oracle:thin:@211.238.142.251:1433;databaseName=edudb;";
-		
-		Connection con=DriverManager.getConnection(url,"edu","class2d");
+		String url = "jdbc:sqlserver://211.238.142.251:1433;databaseName=edudb;"; 
+			 
+		Connection con = DriverManager.getConnection(url, "edu", "class2d"); 
+
 	/*	System.out.println(con.isClosed());
 		con.close();
 		System.out.println(con.isClosed());*/

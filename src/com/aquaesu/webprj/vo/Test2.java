@@ -14,6 +14,6 @@ public class Test2 {
 		List<Member> list= dao.getMembers();
 		for(Member m : list)
 			System.out.println("mid : %s, name : %s\n"+m.getMid()+m.getName());
-		System.out.println("¤·¤¤¤©¤¤¤©¤¤");
+		
 	}
 }
